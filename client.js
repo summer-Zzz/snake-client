@@ -12,6 +12,7 @@ const connect = function() {
 
   conn.on('connect', () =>{
     conn.write("Name: SUM");
+    conn.write("Say: MEOW");
   })
 
   conn.on('data', (data) => {
